@@ -117,6 +117,7 @@ p{
 
 .ico:hover{
   transform: translateY(-4px);
+  border-color: #fff;
 }
 
 .ico-res:hover{
@@ -128,19 +129,19 @@ p{
 }
 
 .ico:hover .lin{
-  color:#2abbf5;
+  color:#fff;
 }
 .ico:hover .git{
-  color:#2abbf5;
+  color:#fff;
 }
 .ico:hover .mail{
-  color:#2abbf5;
+  color:#fff;
 }
 .ico:hover .twit{
-  color:#2abbf5;
+  color:#fff;
 }
 .ico-res:hover .res{
-  color:#2abbf5;
+  color:#fff;
 }
 
 #bar {
