@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: e80e0e;
+  background-color: #212233;
   font:normal 75% Verdana, Helvetica, sans-serif;
 }
 
@@ -126,7 +126,7 @@ p{
   transform: translateY(-4px);
 }
 .ico:hover .fb{
-  color:#2abbf5;
+  color:#fff;
 
 }
 
