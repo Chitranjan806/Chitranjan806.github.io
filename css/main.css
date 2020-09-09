@@ -73,10 +73,8 @@ p{
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 0px;
-  color:black;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+  font-family: Verdana;
 }
 .icons{
   display:inline-block;
