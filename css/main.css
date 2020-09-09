@@ -3,6 +3,7 @@
 body {
   margin: 0;
   background-color: #212233;
+  background: radial-gradient(ellipse at bottom, #212233 5%, rgb(0, 0, 0) 90%);
   font:normal 75% Verdana, Helvetica, sans-serif;
 }
 
@@ -21,7 +22,7 @@ body {
   /*background-color: #182327;*/
   /*background: linear-gradient(to left, #00c6ff , #0072ff);*/
   /*background: -webkit-linear-gradient(90deg, #C04848 10%, #480048 90%);*/
-  background: radial-gradient(ellipse at bottom, #212233 5%, rgb(0, 0, 0) 90%);
+  background: url("pexels-felix-mittermeier-956999.jpg");
   overflow: hidden;
   /*background: linear-gradient(#000000,#191919);*/
   /*background-image: url("");
@@ -63,13 +64,6 @@ p{
 
 }
 
-.profile-pic {
-  width: 30%;
-  height: 30%;
-  align: center;
-  display: block;
-  border-radius: 50%;
-}
 
 .name{
 
