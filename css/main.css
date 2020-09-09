@@ -63,6 +63,13 @@ p{
 
 }
 
+.profile-pic {
+  width: 30%;
+  height: 30%;
+  align: center;
+  display: block;
+}
+
 .name{
 
   width:70%;
