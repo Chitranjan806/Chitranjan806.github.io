@@ -74,7 +74,7 @@ p{
   margin-top: 20px;
   margin-bottom: 0px;
   color:#fff;
-  font-family: Verdana;
+  font-family: Courier New;
 }
 .icons{
   display:inline-block;
@@ -122,10 +122,11 @@ p{
 
 .ico-res:hover{
   transform: translateY(-4px);
+  border-color: #fff;
 }
+
 .ico:hover .fb{
   color:#fff;
-
 }
 
 .ico:hover .lin{
