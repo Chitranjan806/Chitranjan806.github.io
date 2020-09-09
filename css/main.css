@@ -68,6 +68,7 @@ p{
   height: 30%;
   align: center;
   display: block;
+  border-radius: 50%;
 }
 
 .name{
