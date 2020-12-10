@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
   padding: 10px 18px;
   margin-bottom: 8px;
-  transition: 0.5s;
+  transition: 0.3s;
   font-size: 15px;
   border: 1px solid #ddd;
   border-radius: 50px;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  transition: 0.5s;
+  transition: 0.3s;
   background: #0563bb;
 }
 
@@ -302,9 +302,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: tahoma;
   line-height: 72px;
-  background: -webkit-linear-gradient(#555, #2d835e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2a3347;
+  text-shadow: 1px 1px 1px #fff, 
+               4px 4px 8px #fff; 
 }
 
 #hero h1 span {
@@ -355,21 +355,24 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #hero {
-    padding-top: 25vh;
+    padding-top: 30vh;
     text-align: left;
   }
   #hero h4 {
   color: #555;
-  font-size: 18px;
+  font-size: 20px;
   }
   #hero h1 {
     font-size: 38px;
-    line-height: 44px;
+    font-weight: 700;
+    line-height: 46px;
   }
   #hero p {
-    margin-top: 15px;
+    margin-top: 5px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    height: 30px;
     font-size: 18px;
-    line-height: 24px;
   }
 }
 @media (max-width: 768px) {
