@@ -8,9 +8,28 @@
 /*-------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  --scrollbarBG: rgba(255, 255, 255, 1);
+  --thumbBG: #0563bb;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 a {
@@ -215,8 +234,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 25px;
+  top: 25px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -253,7 +272,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/banner-image.jpeg") top right no-repeat;
   background-size: cover;
   position: relative;
-  border: 5px solid #fff;
 }
 
 @media (min-width: 992px) {
@@ -264,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(195, 195, 195, 0.8);
+  background: rgba(215, 215, 215, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -272,17 +290,29 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
+#hero h4 {
+  color: #555;
+  font-size: 30px;
+}
+
 #hero h1 {
   margin: 0;
+  margin-top: -10px;
   font-size: 60px;
   font-weight: 500;
   font-family: tahoma;
-  line-height: 56px;
-  color: #333;
+  line-height: 72px;
+  background: -webkit-linear-gradient(#555, #2d835e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero h1 span {
+  color: #14b06d;
 }
 
 #hero p {
-  color: #45505b;
+  color: #555;
   margin: 15px 0 0 0;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
@@ -298,18 +328,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 18px;
+  font-size: 22px;
   display: inline-block;
   color: #fff;
   line-height: 1;
-  margin-right: 15px;
+  margin-right: 12px;
   transition: 0.5s;
-  padding: 5px;
+  padding: 4px;
   background: #0563bb;
   border: 2px solid #0563bb;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
+#hero .social-links a span {
+  font-size: 16px;
+  padding: 3px 6px;
+  vertical-align: 20%;
+}
 #hero .social-links a:hover {
   border-radius: 25px;
   border-color: #45505b;
@@ -336,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
   #hero:before {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(245, 245, 245, 0.9);
 
   }
 }
@@ -402,9 +437,9 @@ section {
 
 .about img {
   border-radius: 50%; 
-  border: 2px solid #999; 
+  border: 2px solid #5CB279; 
   padding: 1px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 6px 0 rgba(92,178,121, 0.7), 0 4px 10px 0 rgba(92,178,121, 0.3);
 }
 
 .about .content ul {
@@ -546,8 +581,9 @@ section {
 .resume .resume-item h5 {
   font-size: 12px;
   font-family: verdana;
-  background: #f7f0f5;
-  padding: 5px 15px;
+  border-radius: 3px;
+  background: #ceecd8;
+  padding: 4px 8px;
   display: inline-block;
   font-weight: 400;
   margin-bottom: 10px;
@@ -956,6 +992,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
+  padding-left: 15%;
   background: #fff;
 }
 
@@ -975,7 +1012,7 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #45505b;
@@ -984,7 +1021,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #728394;
 }
 
@@ -997,16 +1034,17 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .message-form {
   width: 100%;
+  padding-right: 15%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1014,7 +1052,7 @@ section {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1023,11 +1061,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1036,14 +1074,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1056,21 +1094,29 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact input, .contact textarea {
+  border: 1.5px solid #45505b;
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
+.contact input:hover, .contact textarea:hover {
+  border: 1.5px solid #0563bb;
+}
+.contact input:focus, .contact textarea:focus {
+  box-shadow: none;
+  border: 2px solid #0563bb;
+}
 
-.contact .php-email-form input {
+.contact input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact button[type="submit"] {
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
@@ -1079,8 +1125,8 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+.contact button[type="submit"]:hover {
+  background: #45505b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1167,7 +1213,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #069248;
+  background: #50595a;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1184,7 +1230,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
