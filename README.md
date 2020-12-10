@@ -1,4 +1,4 @@
 # My Portfolio
-<h1>visit me here -><a href="https://chitranjan806.github.io"> Chitranjan Gupta </a></h1>
+<h1>Click Here -><a href="https://chitranjan806.github.io"> Chitranjan Gupta </a></h1>
 <br>
-<center><img src="/assets/img/sunglasses.png" width="200" height="200"/></center>
+<div><center><img src="/assets/img/sunglasses.png" width="300" height="300"/></center></div>
