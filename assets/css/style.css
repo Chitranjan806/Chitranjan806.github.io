@@ -992,7 +992,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  padding-left: 15%;
   background: #fff;
 }
 
@@ -1036,7 +1035,6 @@ section {
 
 .contact .message-form {
   width: 100%;
-  padding-right: 15%;
   background: #fff;
 }
 
