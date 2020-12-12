@@ -1,9 +1,3 @@
-/**
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*-------------------------------------------------------------
 # General
@@ -28,7 +22,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG) ;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 3px solid var(--scrollbarBG);
 }
 
@@ -298,13 +292,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0;
   margin-top: -10px;
-  font-size: 60px;
-  font-weight: 500;
-  font-family: tahoma;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
   line-height: 72px;
   color: #2a3347;
-  text-shadow: 1px 1px 1px #fff, 
-               4px 4px 8px #fff; 
 }
 
 #hero h1 span {
@@ -316,6 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0 0 0;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
+
 }
 
 #hero p span {
@@ -445,9 +438,9 @@ section {
 
 .about img {
   border-radius: 50%; 
-  border: 2px solid #5CB279; 
-  padding: 1px;
-  box-shadow: 0 3px 6px 0 rgba(92,178,121, 0.7), 0 4px 10px 0 rgba(92,178,121, 0.3);
+  border: 1px dashed #333; 
+  padding: 8px;
+  box-shadow: 0 0 3px #888;
 }
 
 .about .content ul {
