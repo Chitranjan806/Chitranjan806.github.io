@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   #main {
-    margin-left: 100px;
+    padding-left: 0px;
   }
 }
 
@@ -384,6 +384,11 @@ section {
   padding: 30px 0;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  section {
+    padding-left: 100px;
+  }
+}
 
 .section-title {
   text-align: center;
@@ -438,9 +443,8 @@ section {
 
 .about img {
   border-radius: 50%; 
-  border: 1px dashed #333; 
-  padding: 8px;
-  box-shadow: 0 0 3px #888;
+  border: 6px solid #fff; 
+  box-shadow: 0 0 8px #999;
 }
 
 .about .content ul {
@@ -554,6 +558,9 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume {
+  background: #f7f7f7;
+}
 
 .resume .resume-title {
   font-size: 26px;
@@ -1220,7 +1227,8 @@ section {
 
 #footer h4 {
   font-size: 28px;
-  color: #fff;
+  color: #8a9799;
+  letter-spacing: 5px;
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
