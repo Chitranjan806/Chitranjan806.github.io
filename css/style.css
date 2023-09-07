@@ -249,7 +249,7 @@ figure {
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: right bottom;
         min-height: 400px;
         position: relative; }
       @media screen and (max-width: 768px) {
@@ -295,7 +295,7 @@ figure {
         position: relative; }
         @media screen and (max-width: 768px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
-            text-align: center;
+            padding-left: 10vw;
             padding-top: 10vh;
             vertical-align: top } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
@@ -356,7 +356,7 @@ figure {
               transition-duration: 0.3s; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-              width: 70%; } }
+              width: 50%; } }
 
 body.offcanvas {
   overflow-x: hidden; }
