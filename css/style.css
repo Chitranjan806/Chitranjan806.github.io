@@ -356,7 +356,7 @@ figure {
               transition-duration: 0.3s; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-              width: 50%; } }
+              width: 60%; } }
 
 body.offcanvas {
   overflow-x: hidden; }
