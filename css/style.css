@@ -488,17 +488,17 @@ body.offcanvas {
 }
 .education .education-card .card .card-body h4 {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Quicksand", Arial, sans-serif;
   position: static;
   color: #444;
-  height: 2em;
+  max-height: 2em;
 }
 .education .education-card .card .card-body p {
   line-height: 1em;
-  height: 2em;
+  height: 1.2em;
 }
-.education .education-card .card .card-body span{
+.education .education-card .card .card-body p span{
   color: #777;
   font-weight: 500;
 }
