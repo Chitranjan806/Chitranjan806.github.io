@@ -475,6 +475,7 @@ body.offcanvas {
     padding: 5px;
     height: 20vh;
     object-fit: contain;
+    overflow: hidden;
     border-bottom: 2px solid #eee;
 }
 .education .education-card .card .card-body {
