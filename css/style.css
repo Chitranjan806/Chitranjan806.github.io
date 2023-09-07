@@ -252,6 +252,10 @@ figure {
         background-position: center bottom;
         min-height: 400px;
         position: relative; }
+      @media screen and (max-width: 768px) {
+        #colorlib-hero .flexslider .slides li {
+          min-height: 100vh;
+        } }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
       z-index: 1000;
@@ -292,7 +296,7 @@ figure {
         @media screen and (max-width: 768px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
             text-align: center;
-            padding-top: 20vh;
+            padding-top: 10vh;
             vertical-align: top } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
@@ -456,6 +460,7 @@ body.offcanvas {
   height: 50vh;
   margin-bottom: 20px;
   max-height: 300px;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2px;
 }
@@ -487,10 +492,11 @@ body.offcanvas {
   font-family: "Quicksand", Arial, sans-serif;
   position: static;
   color: #444;
+  height: 2em;
 }
 .education .education-card .card .card-body p {
-  line-height: 1.2em;
-  height: 2.4em;
+  line-height: 1em;
+  height: 2em;
 }
 .education .education-card .card .card-body span{
   color: #777;
