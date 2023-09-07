@@ -254,7 +254,7 @@ figure {
         position: relative; }
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .slides li {
-          min-height: 100vh;
+          min-height: 85vh;
         } }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
