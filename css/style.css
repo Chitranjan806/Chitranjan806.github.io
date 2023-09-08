@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
-  margin: 0 0 30px 0; }
+  margin: 0 0 25px 0; }
 
 figure {
   margin-bottom: 2.5em;
@@ -74,11 +74,10 @@ figure {
 
 #colorlib-aside {
   padding-top: 3em;
-  padding-bottom: 40px;
+  height: 100vh;
   float: left;
   width: 300px;
   position: fixed;
-  overflow-y: hidden;
   z-index: 1001;
   background: #f2f3f7;
   -webkit-transition: 0.5s;
@@ -92,28 +91,31 @@ figure {
       -ms-transform: translateX(-300px);
       -o-transform: translateX(-300px);
       transform: translateX(-300px);
-      padding-top: 4em; } }
+      padding-top: 3em; } }
   #colorlib-aside .author-img {
-    width: 150px;
-    height: 150px;
+    width: 30vh;
+    max-width: 130px;
+    height: 30vh;
+    max-height: 130px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-  #colorlib-aside .position {
-    display: block;
-    margin-bottom: 2em;
-    font-size: 12px;
-    text-transform: uppercase; }
+  
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 3vh;
     margin-bottom: .5em;
     display: block;
     width: 100%; }
+  #colorlib-aside .position {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.8vh;
+    text-transform: uppercase; }
     #colorlib-aside #colorlib-logo a {
       display: block;
       text-align: center;
@@ -131,15 +133,15 @@ figure {
       padding: 0; }
       @media screen and (max-width: 768px) {
         #colorlib-aside #colorlib-main-menu ul {
-          margin: 0 0 2em 0; } }
+          margin: 0 0 1em 0; } }
       #colorlib-aside #colorlib-main-menu ul li {
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
         padding: 0;
         list-style: none;
-        font-size: 12px;
+        font-size: 2vh;
         font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 1px; }
+        letter-spacing:0.6px; }
         #colorlib-aside #colorlib-main-menu ul li a {
           color: rgba(0, 0, 0, 0.7);
           text-decoration: none;
@@ -189,6 +191,7 @@ figure {
             transform: scaleX(1); }
   #colorlib-aside .colorlib-footer {
     font-size: 15px;
+    margin-bottom: 1em;
     text-align: center;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -205,6 +208,7 @@ figure {
       margin: 0; }
       #colorlib-aside .colorlib-footer ul li {
         padding: 0;
+        font-size: 20px;
         margin: 0;
         display: inline;
         list-style: none; }
@@ -429,32 +433,39 @@ body.offcanvas {
   margin-bottom: 5px;
   margin-right: 5px;
   min-width: 30px;
-  box-shadow: 0 2px 5px 0 rgba(30, 30, 30, 0.6);
-  border border-radius: 2px;
-  font-size: 14px;
-  font-family: calibri;
+  background: transparent;
+  box-shadow: 0 2px 5px 0 rgba(130, 130, 130, 0.1);
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: arial;
 }
 .sub-skills .badge:hover {
-  box-shadow: none;
-  transition-duration: 0.3s;
+  box-shadow: 0 2px 5px 0 rgba(30, 30, 30, 0.4);
+  transition-duration: 0.5s;
 }
 .badge.text-bg-primary {
-  background-color: #53C8AC;
+  color: #53C8AC;
+  border: 1px solid currentColor;
 }
 .badge.text-bg-secondary {
-  background-color: #84D4EF;
+  color: #4296db;
+  border: 1px solid currentColor;
 }
 .badge.text-bg-success {
-  background-color: #AAD684;
+  color: #AAD684;
+  border: 1px solid currentColor;
 }
 .badge.text-bg-danger {
-  background-color: #FBA949;
+  color: #FBA949;
+  border: 1px solid currentColor;
 }
 .badge.text-bg-warning {
-  background-color: #F298B1;
+  color: #F298B1;
+  border: 1px solid currentColor;
 }
 .badge.text-bg-info {
-  background-color: #9876B1;
+  color: #9876B1;
+  border: 1px solid currentColor;
 }
 
 .education .education-card .card {
