@@ -49,6 +49,27 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<script>
+    // Replace with your GitHub username and repository name
+    const username = 'Chitranjan806';
+    const repoName = 'Chitranjan806.github.io';
+
+    // Fetch the latest commit information
+    fetch(`https://api.github.com/repos/${username}/${repoName}/commits?per_page=1`)
+      .then(res => res.json())
+      .then(data => {
+        const commitTime = new Date(data[0].commit.committer.date);
+        const options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' };
+        const formattedTime = commitTime.toLocaleDateString('en-DE', options);
+        
+        document.getElementById('commit-time').innerHTML = `Last Updated: ${formattedTime}`;
+      })
+      .catch(error => {
+        document.getElementById('commit-time').innerHTML = 'Error loading commit time.';
+        console.error(error);
+      });
+  </script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -96,6 +117,7 @@
 		<div id="colorlib-main">
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
 				<div class="flexslider js-fullheight">
+					<div id="commit-time"></div>
 					<ul class="slides">
 				   	<li style="background-image: url(images/bg3.png);">
 				   		<div class="overlay"></div>
@@ -107,6 +129,7 @@
 						   					<h1>Hi! <span style="font-size: 7vw;">👋</span> <br>I'm Chitranjan</h1>
 						   					<h2>A Data Science Master Student in Germany</h2>
 												<p><a class="btn btn-primary btn-learn" href="https://drive.google.com/file/d/1gv9_JCKaMFocX2sSGIxPdWmM7X5ebHvl/view" target="_blank">Download CV <i class="icon-download4"></i></a></p>
+												
 											</div>
 					   				</div>
 					   			</div>
