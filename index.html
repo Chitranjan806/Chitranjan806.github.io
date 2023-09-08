@@ -49,27 +49,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<script>
-    // Replace with your GitHub username and repository name
-    const username = 'Chitranjan806';
-    const repoName = 'Chitranjan806.github.io';
-
-    // Fetch the latest commit information
-    fetch(`https://api.github.com/repos/${username}/${repoName}/commits?per_page=1`)
-      .then(res => res.json())
-      .then(data => {
-        const commitTime = new Date(data[0].commit.committer.date);
-        const options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' };
-        const formattedTime = commitTime.toLocaleDateString('en-DE', options);
-        
-        document.getElementById('commit-time').innerHTML = `Last Updated: ${formattedTime}`;
-      })
-      .catch(error => {
-        document.getElementById('commit-time').innerHTML = 'Error loading commit time.';
-        console.error(error);
-      });
-  </script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>

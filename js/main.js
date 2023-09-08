@@ -308,3 +308,33 @@
 
 
 }());
+
+    // Fetching Github Commit time stamp
+    const username = 'Chitranjan806';
+    const repoName = 'Chitranjan806.github.io';
+
+    // Fetch the latest commit information
+    fetch(`https://api.github.com/repos/${username}/${repoName}/commits?per_page=1`)
+      .then(res => res.json())
+      .then(data => {
+        const commitTime = new Date(data[0].commit.committer.date);
+        const options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' };
+        const formattedTime = commitTime.toLocaleDateString('en-DE', options);
+        
+        document.getElementById('commit-time').innerHTML = `Last Updated: ${formattedTime}`;
+      })
+      .catch(error => {
+        document.getElementById('commit-time').innerHTML = 'Error loading commit time.';
+        console.error(error);
+      });
+	
+	$(window).scroll(function() {
+	    if ($(this).scrollTop()>100)
+	     {
+	        $('#commit-time').hide();
+	     }
+	    else
+	     {
+	      $('#commit-time').show();
+	     }
+});
