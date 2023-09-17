@@ -1105,6 +1105,7 @@ body.offcanvas {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  box-shadow: 0 2px 5px 0 rgba(10, 10, 10, 0.6);
   position: relative;
   height: 270px;
   width: 100%;
